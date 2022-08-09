@@ -11,6 +11,8 @@
  * @type: type to print
  * @print: action to be executed by the printer.
  */
+
+/* printer */
 typedef struct printer
 {
 	char *type;
