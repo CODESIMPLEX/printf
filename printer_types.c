@@ -8,14 +8,14 @@
 
 int (*handle_printer_type(const char *format))(va_list)
 {
-	int i;
+	int i = 0;
 	printer_types p[] = {
 		{"c", print_c},
 		{"s", print_s},
 		{NULL, NULL}
 	};
 
-	for (i = 0; p[i].type != NULL; i++)
+	for (; p[i].type != NULL; i++)
 	{
 		if (*(p[i].type) == *format)
 			break;
