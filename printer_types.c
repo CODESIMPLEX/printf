@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdarg.h>
 
 /**
  * handle_printer_type - checks if there is a valid format specifier
