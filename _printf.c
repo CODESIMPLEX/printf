@@ -37,7 +37,7 @@ int _printf(const char *format, ...)
 			}
 			else
 			{
-				action = handle_printer_types(&format[i + 1]);
+				action = handle_printer_type(&format[i + 1]);
 				if (action == NULL)
 					return (-1);
 				i += 2;
